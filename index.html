@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>懒加载</title>
+    <link href="./src/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--
+      1. src: 可以置空 (意味着这些图片是没有去请求资源的) 。
+      2. data-original: 放置图片真正的 url (当图片进入可视区域之后, 将 data-original 中的 url 放置在 img 的 src 中)。
+     --> 
+    <div class="image-list">
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=214582154,602339837&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2278679858,2193612201&fm=15&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=666590940,534404709&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3584093450,2599117420&fm=26&gp=0.jpg" />
+
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2056855920,2511986692&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2200448756,1968045848&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3857726036,4053837067&fm=15&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1165037609,3132593779&fm=26&gp=0.jpg" />
+
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=276236094,1860081607&fm=15&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1200890989,3807637453&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=673529491,3736296165&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2124150283,1686567165&fm=15&gp=0.jpg" />
+
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3328145773,664495636&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=989271513,3304400311&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=486858567,1741955171&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2704914941,2819905194&fm=15&gp=0.jpg" />
+
+      <img src="" class="image-item" lazyload="true" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=276236094,1860081607&fm=15&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1200890989,3807637453&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=673529491,3736296165&fm=26&gp=0.jpg" />
+      <img src="" class="image-item" lazyload="true" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2124150283,1686567165&fm=15&gp=0.jpg" />
+
+    </div>
+    <script src="./src/js/zepto.min.js"></script>
+    <script src="./src/js/zepto.lazyload.js"></script>
+    <script src="./lazyload.js"></script>
+  </body>
+</html>
+`
